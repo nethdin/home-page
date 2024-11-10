@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(images/background\ \(2\).jpg); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(270deg, rgb(23, 23, 23), rgb(66, 67, 67));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px 0;
+    position: relative;
+    border-radius: 0 0 20px 20px; /* Adjusted border radius */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* To span the content from left to right */
+    align-items: center;
+    max-width: 100%; /* Adjusted to span from left to right */
+    margin: 0 auto;
+}
+
+
+/* Define shining animation */
+@keyframes shine {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* Add animation for the logo */
+.logo {
+    position: relative; /* Position relative for absolute positioning */
+    margin-top: 20px; /* Top margin for the logo */
+    margin-right: auto; /* Push the logo to the left */
+    margin-left: 40px; /* Add space from the left */
+}
+
+.logo img {
+    position: relative; /* Position absolute for precise placement */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    animation: shine 3s infinite; /* Apply animation */
+    height: 100px; /* Set the height */
+    width: auto; /* Let the width adjust automatically */
+}
+
+.learn-hub {
+    color: red;
+    margin-left: 20px; /* Keep consistent with logo margin */
+}
+
+.learn-hub h1 {
+    margin-right:  100px; /* Remove default margin */
+    font-family: cursive;
+}
+
+.mission {
+    color: #fff;
+    margin-right: 150px;
+    font-family: cursive;
+}
+
+.separator {
+    height: 30px;
+    width: 1px;
+    background-color: #fff;
+    margin: 0 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px 0;
+    border-radius: 0 0 20px 20px; /* Adjusted border radius */
+    margin-right: 80px;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: larger;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content a{
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove default underline */
+}
+
+.content a:hover {
+    color: #ff0000; /* Change text color on hover */
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#topic1 {
+    background-image: url(images/back1.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: black; /* Set text color to white for better contrast */
+    padding: 50px; /* Add padding for better readability */
+    opacity: 0.7;
+}
+
+#topic2 {
+    background-image: url(images/back2.2.avif); 
+    background-size: cover;
+    background-position: center;
+    color: black; /* Set text color to white for better contrast */
+    padding: 50px; /* Add padding for better readability */
+    opacity: 0.7;
+}
+
+#topic3 {
+    background-image: url(images/back3.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: black; /* Set text color to white for better contrast */
+    padding: 50px; /* Add padding for better readability */
+    opacity: 0.7;
+}
+
+#topic4 {
+    background-image: url(images/back4.4.webp); 
+    background-size: cover;
+    background-position: center;
+    color: black; /* Set text color to white for better contrast */
+    padding: 50px; /* Add padding for better readability */
+    opacity: 0.7;
+}
+
+/* Loading animation styles */
+/* Define the shine animation */
+@keyframes shine {
+    0% {
+        filter: brightness(100%); /* Initial brightness */
+    }
+    50% {
+        filter: brightness(150%); /* Brightness at midpoint */
+    }
+    100% {
+        filter: brightness(100%); /* Back to initial brightness */
+    }
+}
+section p::after {
+    content: " .";
+    animation: pulse 1s infinite;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(270deg, rgb(23, 23, 23), rgb(66, 67, 67));
+    font-family: cursive;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 50px 20px; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Added margin bottom for spacing */
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 0 10px; /* Adjusted margin */
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+}
+
+.socialIcons a:hover i {
+    color: white;
+}
+
+.footerNav ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.footerNav ul li {
+    margin: 10px 20px; /* Adjusted margin */
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background: linear-gradient(270deg, rgb(23, 23, 23), rgb(66, 67, 67));
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    margin: 0;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
